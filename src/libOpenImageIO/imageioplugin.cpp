@@ -594,7 +594,7 @@ ImageInput::create(string_view filename, bool do_open, const ImageSpec* config,
     if (!Strutil::get_rest_arguments(filename, filename_stripped, args)) {
         OIIO::pvt::errorf(
             "ImageInput::create() called with malformed filename");
-        return in;
+        //return in;
     }
 
     if (filename_stripped.empty())
